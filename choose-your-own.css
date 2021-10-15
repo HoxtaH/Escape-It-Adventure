@@ -1,0 +1,56 @@
+body{
+    background-color: black !important;
+}
+
+#introTitle {
+    font-family: vcr_osd_monoregular;
+    text-align: center;
+    font-size: 100px;
+    color: whitesmoke;
+    text-shadow: 10px 10px 1px purple;
+}
+
+#subtext{
+    color: whitesmoke;
+    text-align: center;
+    font-family: vcr_osd_monoregular;
+    font-size: 30px;
+}
+
+#playButton {
+    position: absolute;
+    left: 80%;
+}
+
+#doorOpen {
+    position: relative;
+    left: 10vw;
+    top: 50%;
+}
+
+#hauntedHouse {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 30%;
+    height: 550px;
+}
+
+#startButton {
+    font-family: vcr_osd_monoregular;
+    position: relative;
+    left: 45%;
+    font-size: 30px;
+}
+
+.room-choices {
+    height: 200px;
+    margin: 15px;
+}
+
+#firstChoiceRow{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
