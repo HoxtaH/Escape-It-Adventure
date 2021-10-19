@@ -35,3 +35,8 @@
     visibility: visible;
     opacity: 0.8; 
    }
+
+   #chronotrigger{
+       position: absolute;
+       left: 80%;
+   }
