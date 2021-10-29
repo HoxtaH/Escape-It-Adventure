@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,22 @@
     <title>Document</title>
     <script src="./enter.js"></script>
 </head>
+
 <body>
-  
-        <video height="800px" id="doorOpen" src="../video-files/residentEvilDoorOpen.mp4" autoplay></video>
-        <script src="../../choose-your-own.js"></script>  
-        
+
+    <video height="800px" id="doorOpen" src="../video-files/residentEvilDoorOpen.mp4" autoplay></video>
+    <script src="../frontEnd.js"></script>
+    <script>
+     
+
+        let myHandler = (e) => {
+            // What you want to do after the event
+            window.location.href = "./firstChoice.html";
+        }
+
+        document.getElementById('doorOpen').addEventListener('ended',myHandler,false);
+    </script>
+
 </body>
+
 </html>

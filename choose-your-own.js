@@ -1,136 +1,27 @@
-let welcome = () => {
-    console.log(window.location.href);
-   window.location.href = "./assets/first-choice/enter.html"
-}
+//All of the choices a user will make thru each screen of the game.
 
-let  myHandler = (e) => {
-    // What you want to do after the event
-    window.location.href = "./firstChoice.html";
-}
-
-let placeTextOnFinalScreen = (endingText) => {
-    document.getElementById("star-wars-ending-scroll-text").innerHTML = endingText;
-}
-
-
-// First choice decision functions
-////////
 /* 
-Be sure to store all of your outcomes for each choice into its respective variable below.
-Each of the functions below will run the moment a user clicks a choice.
-
+Your goal is to create if statements that will print different text endings
+To the star wars themed ending screen.  
+Use the storyConclusion() functioin below to map out your if statement choices.
+Then use the buildFinalScreenText() function to write the result of these decisions.  
 */
 
-let choiceOne;  // use me
-let choiceTwo;   // use me
-let choiceThree;   // use me
-let choiceFour;     // use me
+let choiceOne = window.localStorage.getItem("choiceOne"); // use me
+let choiceTwo = window.localStorage.getItem("choiceTwo");  // use me
+let choiceThree = window.localStorage.getItem("choiceThree");  // use me
+let choiceFour = window.localStorage.getItem("choiceFour");  // use me
 
-let clickBathroom = () => {
-    window.location.href = "../second-choice/second-choice.html";
-    return "bathroom";
+let buildFinalScreenText = (endingText) => {
+    document.getElementById("star-wars-ending-scroll-text").innerHTML = endingText;
+
 }
 
-let clickLivingroom = () => {
-    window.location.href = "../second-choice/second-choice.html";
-    return "living room";
-}
+// build your final if statements in the function below
 
-let clickBedroom = () => {
-    window.location.href = "../second-choice/second-choice.html";
-return "bedroom";
-}
-
-let clickKitchen = () => {
-    window.location.href = "../second-choice/second-choice.html";
-    return "kitchen";
-}
-//////////////////////////////////////////////////////////
-// End first choice decision functions
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////
-
-// Second choice functions
-let clickCellPhone = () => {
-    window.location.href = "../third-choice/third-choice.html";
-    return "cell phone";
-}
-
-let clickGreenSkull = () => {
-    window.location.href = "../third-choice/third-choice.html";
-    return "green skull";
-}
-
-let clickGymShorts = () => {
-    window.location.href = "../third-choice/third-choice.html";
-    return "gym shorts";
-}
-
-let clickbreadAndButter = () => {
-    window.location.href = "../third-choice/third-choice.html";
-    return "bread & butter"
-}
-/////////////////////////////
-// End of second choice functions
-/////////////////////////////
-let clickTaco = () => {
-    window.location.href = "../forth-choice/forth-choice.html";
-    return "taco";
-}
-
-let clickPizza = () => {
-    window.location.href = "../forth-choice/forth-choice.html";
-    return "pizza";
-}
-
-let clickFrenchFries = () => {
-    window.location.href = "../forth-choice/forth-choice.html";
-    return "french fries";
-}
-
-let clickPeanutButter = () => {
-    window.location.href = "../forth-choice/forth-choice.html";
-    return "dancing peanut butter";
-}
-//////////////////////////////////////////////
-//////////////////////////////////////////////
-// End of third choice functions
-//////////////////////////////////////
-
-//////////////////////////////////
-// Start of forth choice functions
-//////////////////////////////////
-
-let clickGryffindor = () => {
-    window.location.href = "../final-screen/final-screen.html";
-    placeTextOnFinalScreen("And finally the end have come.  The only thing standing in our way was us... and no one could stop us")
-    return "Gryffindor";
-}
-
-let clickHufflePuff = () => {
-    window.location.href = "../final-screen/final-screen.html";
-    return "HufflePuff";
-}
-
-let clickRavenClaw = () => {
-    window.location.href = "../final-screen/final-screen.html";
-    return "Gryffindor";
-}
-
-let clickSlytherin = () => {
-    window.location.href = "../final-screen/final-screen.html";
-    return "Slytherin";
-}
-
-// end of forth choice functions
+let storyConclusion = () => {
+    // write all the results of your different if statements within this function
+    }
 
 
-///////////////////////////////////////
-/////////////////////////////////////
-////////////////////////////
-// misc helper functions essential for game
-
-/////////////////////////////////
-//////////////////
-//////////////  
-document.getElementById('doorOpen').addEventListener('ended',myHandler,false);
+storyConclusion();
